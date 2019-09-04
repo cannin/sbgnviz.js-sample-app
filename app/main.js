@@ -2,6 +2,7 @@ var sbgnviz = require('sbgnviz');
 var filesaverjs = require('filesaverjs');
 var cytoscape = require('cytoscape');
 var jQuery = $ = require('jquery');
+var tippy = require('tippy.js');
 
 // Get cy extension instances
 var cyPanzoom = require('cytoscape-panzoom');
@@ -13,7 +14,7 @@ var options = {
 
     // whether to fit label to nodes
     fitLabelsToNodes: function () {
-        return false;
+        return true;
     },
     // dynamic label size it may be 'small', 'regular', 'large'
     dynamicLabelSize: function () {
@@ -38,10 +39,10 @@ var options = {
 var libs = {
     cytoscape: cytoscape,
     jQuery: jQuery,
-    filesaverjs: filesaverjs
+    filesaverjs: filesaverjs,
+    tippy: tippy
 };
 
-//var filename = 'neuronal_muscle_signaling.xml';
 var filename = 'neuronal_muscle_signaling_color.xml';
 var folder = 'app/samples/';
 
@@ -94,20 +95,18 @@ $(document).ready(function () {
     });
 
     setTimeout(function() {
-        //s.loadSample(filename, folder);
-
-        // load xml document
+        // load XML document
         var xmlObject = loadXMLDoc(folder + filename);
         console.log("S: " + xmlObject.toString());
 
         s.loadSBGNMLFile(new Blob([xmlObject], {
             type: "text/xml"
         }));
-
-        //var svgContent = cy.svg({scale: 1, full: true});
-        //console.log("svgContent: " + svgContent);
-        //filesaverjs.saveAs(new Blob([svgContent], {type:"image/svg+xml;charset=utf-8"}), "network.svg");
     }, 100);
+
+    $("#save-as-svg").click(function(evt) {
+        s.saveAsSvg("network.svg");
+    });
 
     console.log('Loaded filename: ' + filename);
 });

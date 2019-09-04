@@ -8,17 +8,18 @@
   },
   "repository": {
     "type": "git",
-    "url": ""
+    "url": "https://github.com/iVis-at-Bilkent/sbgnviz.js-sample-app"
   },
   "bugs": {
-    "url": ""
+    "url": "https://github.com/iVis-at-Bilkent/sbgnviz.js-sample-app/issues"
   },
   "homepage": "",
   "dependencies": {
     "jquery": "~2.2.4",
     "filesaverjs": "~0.2.2",
-    "cytoscape": "iVis-at-Bilkent/cytoscape.js#unstable",
-    "sbgnviz": "~4.2.0",
+    "cytoscape": "github:iVis-at-Bilkent/cytoscape.js#cfdfa4fc6c6b22a2e424d283a4626a8973eac803",
+    "sbgnviz": "github:iVis-at-Bilkent/sbgnviz.js#e68f81052f137f7b7dc35233c94ed052e023f11f",
+    "tippy.js": "^3.4.0",
     "cytoscape-panzoom": "~2.5.2"
   },
   "devDependencies": {
