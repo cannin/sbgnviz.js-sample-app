@@ -24,11 +24,11 @@ var options = {
     compoundPadding: function () {
         return 10;
     },
-    // ???
+    // From https://github.com/iVis-at-Bilkent/cytoscape.js-expand-collapse
     rearrangeAfterExpandCollapse: function () {
         return false;
     },
-    // ???
+    // Whether to animate on drawing changes
     animateOnDrawingChanges: function () {
         return false;
     },
