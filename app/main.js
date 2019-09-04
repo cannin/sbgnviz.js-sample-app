@@ -5,7 +5,7 @@ var jQuery = $ = require('jquery');
 var tippy = require('tippy.js');
 
 // Get cy extension instances
-var cyPanzoom = require('cytoscape-panzoom');
+var cyPanzoom = require('cytoscape-panzoom'); // Needs CSS in index.html
 
 // Options
 var options = {
