@@ -1,7 +1,5 @@
 # A Sample Application for SBGNViz
 
-NOT WORKING
-
 # Running a Local Instance
 In order to deploy and run a local instance of the tool, please follow the steps below:
 
