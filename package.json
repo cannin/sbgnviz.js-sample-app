@@ -1,10 +1,11 @@
 {
   "name": "sbgnviz-js_sample",
+  "main": "server.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
     "build-bundle-js": "browserify app/main.js -o app/bundle.js --debug",
-    "run-server": "node server.js",
-    "build-release": "npm run build-bundle-js"
+    "build-release": "npm run build-bundle-js",
+    "start": "nodemon server.js"
   },
   "repository": {
     "type": "git",
@@ -24,6 +25,7 @@
   },
   "devDependencies": {
     "express": "4.14.0",
-    "browserify": "^11.2.0"
+    "browserify": "^11.2.0",
+    "nodemon": "1.18.4"
   }
 }

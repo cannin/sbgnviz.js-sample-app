@@ -13,7 +13,7 @@ npm install
 ## Running the tool
 ```
 npm run build-release
-npm run run-server
+npm run start
 ```
 
-Then, open a web browser and navigate to localhost:3000.
+Then, open a web browser and navigate to http://localhost:8080.
