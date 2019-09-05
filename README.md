@@ -1,3 +1,5 @@
+[![Edit sbgnviz-js_sample](https://codesandbox.io/static/img/play-codesandbox.svg)](https://codesandbox.io/s/github/cannin/sbgnviz.js-sample-app/tree/master/?fontsize=12)
+
 # A Sample Application for SBGNViz
 
 # Running a Local Instance
